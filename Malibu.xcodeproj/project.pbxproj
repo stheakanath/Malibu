@@ -30,6 +30,7 @@
 		EBF1E71C1A88053B00DDF89D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF1E71B1A88053B00DDF89D /* SystemConfiguration.framework */; };
 		EBF1E71E1A88054900DDF89D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF1E71D1A88054900DDF89D /* libz.dylib */; };
 		EBF1E7201A88056700DDF89D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF1E71F1A88056700DDF89D /* libsqlite3.dylib */; };
+		EBF1E7231A88088C00DDF89D /* RegionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF1E7221A88088C00DDF89D /* RegionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		EBF1E71B1A88053B00DDF89D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EBF1E71D1A88054900DDF89D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		EBF1E71F1A88056700DDF89D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EBF1E7211A88088C00DDF89D /* RegionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionController.h; sourceTree = "<group>"; };
+		EBF1E7221A88088C00DDF89D /* RegionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				EBF1E6DF1A8802D700DDF89D /* AppDelegate.m */,
 				EBF1E6E11A8802D700DDF89D /* ViewController.h */,
 				EBF1E6E21A8802D700DDF89D /* ViewController.m */,
+				EBF1E7211A88088C00DDF89D /* RegionController.h */,
+				EBF1E7221A88088C00DDF89D /* RegionController.m */,
 				EBF1E6E71A8802D700DDF89D /* Images.xcassets */,
 				EBF1E6E91A8802D700DDF89D /* LaunchScreen.xib */,
 				EBF1E6DA1A8802D700DDF89D /* Supporting Files */,
@@ -292,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF1E6E31A8802D700DDF89D /* ViewController.m in Sources */,
+				EBF1E7231A88088C00DDF89D /* RegionController.m in Sources */,
 				EBF1E6E01A8802D700DDF89D /* AppDelegate.m in Sources */,
 				EBF1E6DD1A8802D700DDF89D /* main.m in Sources */,
 			);
