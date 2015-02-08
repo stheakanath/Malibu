@@ -20,6 +20,13 @@ static const NSString *kRegionID = @"malibu";
 
 @implementation BeaconFinder
 
+- (id)init {
+    if (self = [super init]) {
+        _UUID = [[NSUUID alloc] initWithUUIDString:(NSString *)kRawUUID];
+    }
+    return self;
+}
+
 - (void)startFinding {
     self.locationManager = [CLLocationManager new];
     self.locationManager.delegate = self;
