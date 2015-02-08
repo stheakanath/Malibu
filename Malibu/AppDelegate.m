@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -16,19 +15,20 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // [Optional] Power your app with Local Datastore. For more info, go to
-    // https://parse.com/docs/ios_guide#localdatastore/iOS
-    [Parse enableLocalDatastore];
+- (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral
+{
     
-    // Initialize Parse.
-    [Parse setApplicationId:@"bzlyG2EdywDSk6ZvBe6oLDo8Isbd1wSa4EIJLext"
-                  clientKey:@"1ECEr3PTSLWNfFFrZaehMg2PPiSVYRWwOlriPy02"];
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW13
+    NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:@"83E2B02C-8E8F-4D89-A4F6-BAA71816CEA1"];
+    CLBeaconRegion *beaconRegion= [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID identifier:@"malibu"];
+    NSDictionary *beaconPeripheralData = [beaconRegion peripheralDataWithMeasuredPower:nil];
+    CBPeripheralManager *peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil options:nil];
+    [peripheralManager startAdvertising:beaconPeripheralData];
     
-    // [Optional] Track statistics around application opens.
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
-    // ...
     return YES;
 }
 

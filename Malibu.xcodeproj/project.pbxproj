@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090BD95F1A880F78008B4D5E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090BD95E1A880F78008B4D5E /* CoreBluetooth.framework */; };
 		EBF1E6DD1A8802D700DDF89D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF1E6DC1A8802D700DDF89D /* main.m */; };
 		EBF1E6E01A8802D700DDF89D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF1E6DF1A8802D700DDF89D /* AppDelegate.m */; };
 		EBF1E6E31A8802D700DDF89D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF1E6E21A8802D700DDF89D /* ViewController.m */; };
@@ -14,8 +15,6 @@
 		EBF1E6E81A8802D700DDF89D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF1E6E71A8802D700DDF89D /* Images.xcassets */; };
 		EBF1E6EB1A8802D700DDF89D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF1E6E91A8802D700DDF89D /* LaunchScreen.xib */; };
 		EBF1E6F71A8802D700DDF89D /* MalibuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF1E6F61A8802D700DDF89D /* MalibuTests.m */; };
-		EBF1E7061A8804B100DDF89D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF1E7011A8804B100DDF89D /* Bolts.framework */; };
-		EBF1E7071A8804B100DDF89D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF1E7021A8804B100DDF89D /* Parse.framework */; };
 		EBF1E7081A8804B100DDF89D /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF1E7031A8804B100DDF89D /* ParseCrashReporting.framework */; };
 		EBF1E7091A8804B100DDF89D /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF1E7041A8804B100DDF89D /* ParseFacebookUtils.framework */; };
 		EBF1E70A1A8804B100DDF89D /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF1E7051A8804B100DDF89D /* ParseUI.framework */; };
@@ -44,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090BD95E1A880F78008B4D5E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		EBF1E6D71A8802D700DDF89D /* Malibu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Malibu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF1E6DB1A8802D700DDF89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBF1E6DC1A8802D700DDF89D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090BD95F1A880F78008B4D5E /* CoreBluetooth.framework in Frameworks */,
 				EBF1E7201A88056700DDF89D /* libsqlite3.dylib in Frameworks */,
 				EBF1E71E1A88054900DDF89D /* libz.dylib in Frameworks */,
 				EBF1E71C1A88053B00DDF89D /* SystemConfiguration.framework in Frameworks */,
@@ -93,11 +94,9 @@
 				EBF1E7101A88051600DDF89D /* CoreGraphics.framework in Frameworks */,
 				EBF1E70E1A88051000DDF89D /* CFNetwork.framework in Frameworks */,
 				EBF1E70C1A8804F500DDF89D /* AudioToolbox.framework in Frameworks */,
-				EBF1E7071A8804B100DDF89D /* Parse.framework in Frameworks */,
 				EBF1E7081A8804B100DDF89D /* ParseCrashReporting.framework in Frameworks */,
 				EBF1E70A1A8804B100DDF89D /* ParseUI.framework in Frameworks */,
 				EBF1E7091A8804B100DDF89D /* ParseFacebookUtils.framework in Frameworks */,
-				EBF1E7061A8804B100DDF89D /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +113,7 @@
 		EBF1E6CE1A8802D700DDF89D = {
 			isa = PBXGroup;
 			children = (
+				090BD95E1A880F78008B4D5E /* CoreBluetooth.framework */,
 				EBF1E6D91A8802D700DDF89D /* Malibu */,
 				EBF1E6F31A8802D700DDF89D /* MalibuTests */,
 				EBF1E6D81A8802D700DDF89D /* Products */,
@@ -500,6 +500,7 @@
 				EBF1E6FC1A8802D700DDF89D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBF1E6FD1A8802D700DDF89D /* Build configuration list for PBXNativeTarget "MalibuTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +509,7 @@
 				EBF1E6FF1A8802D700DDF89D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
