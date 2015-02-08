@@ -30,6 +30,7 @@
 		EBF1E71E1A88054900DDF89D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF1E71D1A88054900DDF89D /* libz.dylib */; };
 		EBF1E7201A88056700DDF89D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF1E71F1A88056700DDF89D /* libsqlite3.dylib */; };
 		EBF1E7261A880F4E00DDF89D /* BeaconFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF1E7251A880F4E00DDF89D /* BeaconFinder.m */; };
+		EBF1E7291A881CAF00DDF89D /* BeaconAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF1E7281A881CAF00DDF89D /* BeaconAdvertiser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		EBF1E71F1A88056700DDF89D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EBF1E7241A880F4E00DDF89D /* BeaconFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconFinder.h; sourceTree = "<group>"; };
 		EBF1E7251A880F4E00DDF89D /* BeaconFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconFinder.m; sourceTree = "<group>"; };
+		EBF1E7271A881CAF00DDF89D /* BeaconAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconAdvertiser.h; sourceTree = "<group>"; };
+		EBF1E7281A881CAF00DDF89D /* BeaconAdvertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconAdvertiser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				EBF1E6DF1A8802D700DDF89D /* AppDelegate.m */,
 				EBF1E6E11A8802D700DDF89D /* ViewController.h */,
 				EBF1E6E21A8802D700DDF89D /* ViewController.m */,
+				EBF1E7271A881CAF00DDF89D /* BeaconAdvertiser.h */,
+				EBF1E7281A881CAF00DDF89D /* BeaconAdvertiser.m */,
 				EBF1E7241A880F4E00DDF89D /* BeaconFinder.h */,
 				EBF1E7251A880F4E00DDF89D /* BeaconFinder.m */,
 				EBF1E6E71A8802D700DDF89D /* Images.xcassets */,
@@ -297,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF1E6E31A8802D700DDF89D /* ViewController.m in Sources */,
+				EBF1E7291A881CAF00DDF89D /* BeaconAdvertiser.m in Sources */,
 				EBF1E6E01A8802D700DDF89D /* AppDelegate.m in Sources */,
 				EBF1E7261A880F4E00DDF89D /* BeaconFinder.m in Sources */,
 				EBF1E6DD1A8802D700DDF89D /* main.m in Sources */,

@@ -61,7 +61,7 @@ static const NSString *kRegionID = @"malibu";
         // the user is relatively close to the exhibit.
         CLProximity proximity = nearestExhibit.proximity;
         [self.delegate beaconFinder:self didFindWithProximity:proximity];
-        NSLog(@"proximity = %d", (int)proximity);
+        NSLog(@"%@", beacons);
         //    if (CLProximityNear == nearestExhibit.proximity) {
         //      //[self presentExhibitInfoWithMajorValue:nearestExhibit.major.integerValue];
         //      NSLog(@"Blah");
