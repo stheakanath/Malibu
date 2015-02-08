@@ -10,10 +10,10 @@
 
 @interface AppDelegate ()
 
+
 @end
 
 @implementation AppDelegate
-
 
 - (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral
 {
